@@ -1,17 +1,31 @@
 {
-  "name": "fantastic-parakeet",
-  "type": "module",
-  "scripts": {
-    "dev:server": "bun ./run.js server dev"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "elysia": "^1.1.9"
-  }
+	"name": "fantastic-parakeet",
+	"type": "module",
+	"scripts": {
+		"dev-server": "bun ./run.js server dev",
+		"dev-client": "bun ./run.js client dev"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@types/bun": "latest",
+		"@types/react": "npm:types-react@rc",
+		"@types/react-dom": "npm:types-react-dom@rc",
+		"@vitejs/plugin-react": "^4.3.1",
+		"vite": "^5.4.2",
+		"vite-tsconfig-paths": "^5.0.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@elysiajs/eden": "^1.1.2",
+		"elysia": "^1.1.9",
+		"elysia-vite-server": "^0.0.1",
+		"react": "^19.0.0-rc-e56f4ae3-20240830",
+		"react-dom": "^19.0.0-rc-e56f4ae3-20240830"
+	},
+	"overrides": {
+		"@types/react": "npm:types-react@rc",
+		"@types/react-dom": "npm:types-react-dom@rc"
+	}
 }

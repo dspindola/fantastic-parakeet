@@ -1,0 +1,8 @@
+jsx = "react-jsx"
+jsxImportSource = "react"
+logLevel = "debug"
+
+preload = ["./config/env.js"]
+
+[define]
+"import.meta.env.VITE_APP_TITLE" = "'APP'"

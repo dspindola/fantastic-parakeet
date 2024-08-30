@@ -1,12 +1,32 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
+	"overrides": [
+		{
+			"include": ["server/**"],
+			"organizeImports": {
+				"enabled": true
+			},
+			"javascript": {
+				"globals": ["Bun"]
+			},
+			"linter": {
+				"enabled": true,
+				"rules": {
+					"recommended": true
+				}
+			}
+		},
+		{
+			"include": ["client/**"],
+			"javascript": {
+				"jsxRuntime": "transparent",
+				"globals": ["Bun"],
+				"formatter": {
+					"enabled": true,
+					"jsxQuoteStyle": "single",
+					"quoteStyle": "single"
+				}
+			}
 		}
-	}
+	]
 }

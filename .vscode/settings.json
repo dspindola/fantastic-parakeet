@@ -1,7 +1,22 @@
 {
-    "[typescript]": {
-        "editor.defaultFormatter": "biomejs.biome",
-        "editor.formatOnSave": true,
-    },
-    "biome.searchInPath": true
+	"editor.formatOnSave": true,
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"biome.searchInPath": true,
+	"path-intellisense.absolutePathTo": "/",
+	"path-intellisense.showHiddenFiles": true,
+	"path-intellisense.mappings": {
+		"$HOME": "/home/codespace",
+		"$REPL_HOME": "/workspaces/fantastic-parakeet"
+	}
 }
