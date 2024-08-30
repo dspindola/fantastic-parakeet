@@ -1,0 +1,5 @@
+jsx = "react-jsx"
+jsxImportSource = "react"
+logLevel = "debug"
+
+preload = ["./env.js"]
