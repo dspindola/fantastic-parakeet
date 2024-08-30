@@ -18,10 +18,15 @@
 		"noPropertyAccessFromIndexSignature": false,
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["*"]
+			"@/*": ["*"],
+			"@api/*": ["../api/*"]
 		},
-		"rootDir": ".",
 		"types": ["bun", "react/canary", "react-dom/canary"]
 	},
-	"include": ["**/*.ts", "**/*.tsx"]
+	"include": ["./**/*.ts", "./**/*.tsx"],
+	"references": [
+		{
+			"path": "../api/tsconfig.json"
+		}
+	]
 }

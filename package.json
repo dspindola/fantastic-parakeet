@@ -2,8 +2,9 @@
 	"name": "fantastic-parakeet",
 	"type": "module",
 	"scripts": {
-		"dev-server": "bun ./run.js server dev",
-		"dev-client": "bun ./run.js client dev"
+		"dev-server": "bun ./run.js api dev",
+		"dev-client": "bun ./run.js client dev",
+		"dev": "concurrently bun:dev-*"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
@@ -11,6 +12,7 @@
 		"@types/react": "npm:types-react@rc",
 		"@types/react-dom": "npm:types-react-dom@rc",
 		"@vitejs/plugin-react": "^4.3.1",
+		"concurrently": "^8.2.2",
 		"vite": "^5.4.2",
 		"vite-tsconfig-paths": "^5.0.1"
 	},
@@ -18,6 +20,7 @@
 		"typescript": "^5.0.0"
 	},
 	"dependencies": {
+		"@elysiajs/cors": "^1.1.0",
 		"@elysiajs/eden": "^1.1.2",
 		"elysia": "^1.1.9",
 		"elysia-vite-server": "^0.0.1",

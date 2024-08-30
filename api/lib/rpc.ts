@@ -1,4 +1,4 @@
-import type { http } from "@/server/http";
+import type { http } from "../server/http";
 import { treaty } from "@elysiajs/eden";
 
 type Api = ReturnType<typeof http>;

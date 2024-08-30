@@ -6,7 +6,7 @@ new Elysia()
 	.use(
 		vite({
 			static: {
-				assets: '.',
+				assets: process.cwd(),
 				alwaysStatic: false,
 				noCache: true,
 			},

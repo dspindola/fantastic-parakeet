@@ -1,3 +1,9 @@
+import { use } from 'react';
+import { rpc } from '../api';
+
 export const Route = {
-	component: () => <p>home route</p>,
+	component: () => {
+		const { data } = use(rpc.api.index.get());
+		return <>{data}</>;
+	},
 };
